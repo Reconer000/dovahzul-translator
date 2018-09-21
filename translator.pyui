@@ -1,0 +1,202 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 6}, {111, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 15,
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "FE0E497C-12F7-4A42-8B32-B403D6C54242",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "From english",
+          "name" : "label_words",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 46}, {150, 96}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "64CE5D2E-9C4D-4E71-84AA-993475A72A72",
+          "corner_radius" : 1,
+          "frame" : "{{60, 224}, {200, 32}}",
+          "border_width" : 1,
+          "custom_attributes" : "",
+          "action" : "etd",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "words",
+          "font_size" : 17
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{223, 150}, {80, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "copy_action",
+          "frame" : "{{120, 224}, {80, 32}}",
+          "title" : "Copy",
+          "uuid" : "A1B10A5F-400F-4CA3-8C5E-BB8B874E3EB2",
+          "class" : "Button",
+          "name" : "copy",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 190}, {308, 106}}",
+        "class" : "TextView",
+        "attributes" : {
+          "uuid" : "CB13AD99-C1FB-4080-85F2-3FDC0FB7B773",
+          "font_size" : 17,
+          "corner_radius" : 2,
+          "frame" : "{{60, 140}, {200, 200}}",
+          "editable" : true,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "no",
+          "font_name" : "<System>",
+          "spellchecking_type" : "no",
+          "class" : "TextView",
+          "name" : "textview1",
+          "flex" : "WH"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{164, 46}, {150, 96}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "64CE5D2E-9C4D-4E71-84AA-993475A72A72",
+          "corner_radius" : 1,
+          "frame" : "{{60, 224}, {200, 32}}",
+          "border_width" : 1,
+          "custom_attributes" : "",
+          "action" : "dte",
+          "alignment" : "left",
+          "autocorrection_type" : "no",
+          "font_name" : "<System>",
+          "spellchecking_type" : "no",
+          "class" : "TextField",
+          "name" : "words1",
+          "font_size" : 17
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 150}, {150, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "border_width" : 0,
+          "name" : "label1",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "164260A3-DCF6-4C4F-94E2-E4C330B51922",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Translated text:",
+          "corner_radius" : 0,
+          "font_size" : 15,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{164, 6}, {111, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "FE0E497C-12F7-4A42-8B32-B403D6C54242",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "From dovahzul",
+          "font_size" : 15,
+          "name" : "label_words"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 323}, {308, 125}}",
+        "class" : "TextView",
+        "attributes" : {
+          "uuid" : "CB13AD99-C1FB-4080-85F2-3FDC0FB7B773",
+          "flex" : "WH",
+          "corner_radius" : 2,
+          "frame" : "{{60, 140}, {200, 200}}",
+          "editable" : true,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "no",
+          "font_name" : "DragonAlphabetPublic-Regular",
+          "spellchecking_type" : "no",
+          "class" : "TextView",
+          "name" : "textview2",
+          "font_size" : 17
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 470}, {150, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "border_width" : 0,
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "164260A3-DCF6-4C4F-94E2-E4C330B51922",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Created by Reconer_000",
+          "corner_radius" : 0,
+          "name" : "label1",
+          "font_size" : 8
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "attributes" : {
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "name" : "Dovahzul Translator",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
