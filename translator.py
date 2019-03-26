@@ -1,79 +1,95 @@
-'''
-___________________________
-Dovahzul translator
-
-install included font to see glyphs
-
-Made by Reconer_000
-___________________________
-'''
-import ui
-import clipboard
-from console import hud_alert
+#!python2
 import csv
 from string import capwords
-
-with open('dovah.csv', mode='r', encoding="utf-8") as infile:
+#add ', encoding="utf-8"' after mode='r' for python3 use
+with open('dovah.csv', mode='r') as infile:
 	reader = csv.reader(infile)
 	english_to_dovahzul = dict((rows[0], rows[1]) for rows in reader)
 
 dovahzul_to_english = {v: k for k, v in english_to_dovahzul.items()}
 
-suffix = 's', 'ing', 'es'
-prefix = ' '
+prefixes = {'non': 'ni', 're': 'or', 'dis': 'vo', 'un': 'vo'}
+
+suffixes = {
+	'ing': 'von',
+	's': 'he',
+	'ship': 'dein',
+	'ly': 'gaar',
+	'er': 'iik',
+	'ous': 'kei',
+	'less': 'nu',
+	'ness': 'om',
+	'ism': 'un',
+	'y': 'us'
+}
+
+specialchars = {
+	'ah': 'H',
+	'aa': 'A',
+	'ei': 'W',
+	'ey': 'E',
+	'ii': 'I',
+	'ir': 'J',
+	'oo': 'O',
+	'uu': 'U',
+	'ur': 'R',
+}
 
 
-def strip_left(text, prefix):
-	if not text.startswith(prefix):
-		return text
-	return text[len(prefix):]
+def suffix(text, dictionary):
+	if dictionary == english_to_dovahzul:
+		for x, y in suffixes.items():
+			text = text.replace(x, ' ' + x)
+	else:
+		for x, y in suffixes.items():
+			text = text.replace(y, ' ' + y)
+	text = translate(text, dictionary, filler='?')
+	return text.replace(' ', '')
 
 
-def strip_right(text, suffix):
-	if not text.endswith(suffix):
-		return text
-	elif text.endswith('s'):
-		return text[:len(text) - len('s')]
-	elif text.endswith('ing'):
-		return text[:len(text) - len('ing')] + "e"
+def prefix(text, dictionary):
+	if dictionary == english_to_dovahzul:
+		for x, y in prefixes.items():
+			text = text.replace(x, ' ' + x)
+	else:
+		for x, y in suffixes.items():
+			text = text.replace(y, ' ' + y)
+	text = translate(text, dictionary, filler='?')
+	return text.replace(' ', '')
 
 
-def copy_action(sender):
-	clipboard.set(sender.superview['textview1'].text)
-	hud_alert('Copied')
+def spechar(text):
+	for x, y in specialchars.items():
+		text = text.replace(x, y)
+	return text
 
 
 def translate(text, dictionary, filler=None):
-	return ' '.join(
+	text = ' '.join(
 		[dictionary.get(word, filler or word) for word in text.split()])
+	return text
 
 
-def dte(sender):
-	words = capwords(sender.text).split()
-	v['textview1'].text = ""
-	v['textview2'].text = ""
+def dte(text):
+	rtn = ''
+	words = capwords(text).split()
 	for obj in words:
-		v['textview2'].text += obj.lower() + '   '
-		v['textview1'].text += " " + translate(obj, dovahzul_to_english, filler='?')
-	v['words1'].text = ""
+		kek = translate(obj, dovahzul_to_english, filler='?')
+		if kek == '?':
+			kek = suffix(obj, dovahzul_to_english)
+			if kek == '?':
+				kek = prefix(obj, dovahzul_to_english)
+		rtn += kek.lower() + ' '
+	return rtn
 
 
-def etd(sender):
-	words = capwords(sender.text).split()
-	v['textview1'].text = ""
-	v['textview2'].text = ""
+def etd(text):
+	rtn = ''
+	words = capwords(text).split()
 	for obj in words:
-		obj = strip_right(obj, suffix)
 		kek = translate(obj, english_to_dovahzul, filler='?')
-		v['textview1'].text += kek + ' '
-		v['textview2'].text += kek.lower() + '   '
-	v['words'].text = ""
+		if kek == '?':
+			kek = suffix(obj, english_to_dovahzul)
+		rtn += kek.lower() + ' '
+	return rtn
 
-
-v = ui.load_view('translator')
-if ui.get_screen_size()[1] >= 768:
-	# iPad
-	v.present('sheet')
-else:
-	# iPhone
-	v.present()

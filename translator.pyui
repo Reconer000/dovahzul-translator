@@ -5,7 +5,22 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 6}, {111, 32}}",
+        "frame" : "{{0, -41}, {381, 814}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "frame" : "{{141, 303}, {100, 100}}",
+          "image_name" : "bgimage.png",
+          "class" : "ImageView",
+          "name" : "imageview1",
+          "uuid" : "ABAB6CA7-A72F-4ED5-B255-ACF0B5A77B9E"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 6}, {139, 32}}",
         "class" : "Label",
         "attributes" : {
           "font_size" : 15,
@@ -13,7 +28,7 @@
           "uuid" : "FE0E497C-12F7-4A42-8B32-B403D6C54242",
           "class" : "Label",
           "alignment" : "left",
-          "text" : "From english",
+          "text" : "Text to translate:",
           "name" : "label_words",
           "font_name" : "<System>"
         },
@@ -23,37 +38,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 46}, {150, 96}}",
-        "class" : "TextField",
-        "attributes" : {
-          "uuid" : "64CE5D2E-9C4D-4E71-84AA-993475A72A72",
-          "corner_radius" : 1,
-          "frame" : "{{60, 224}, {200, 32}}",
-          "border_width" : 1,
-          "custom_attributes" : "",
-          "action" : "etd",
-          "alignment" : "left",
-          "autocorrection_type" : "default",
-          "font_name" : "<System>",
-          "spellchecking_type" : "default",
-          "class" : "TextField",
-          "name" : "words",
-          "font_size" : 17
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{223, 150}, {80, 32}}",
+        "frame" : "{{295, 150}, {80, 32}}",
         "class" : "Button",
         "attributes" : {
-          "action" : "copy_action",
+          "action" : "copy",
           "frame" : "{{120, 224}, {80, 32}}",
+          "tint_color" : "RGBA(0.250980,0.035294,0.411765,1.000000)",
           "title" : "Copy",
           "uuid" : "A1B10A5F-400F-4CA3-8C5E-BB8B874E3EB2",
           "class" : "Button",
+          "font_bold" : true,
           "name" : "copy",
           "font_size" : 15
         },
@@ -63,45 +57,25 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 190}, {308, 106}}",
+        "frame" : "{{6, 190}, {369, 149}}",
         "class" : "TextView",
         "attributes" : {
           "uuid" : "CB13AD99-C1FB-4080-85F2-3FDC0FB7B773",
           "font_size" : 17,
           "corner_radius" : 2,
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
           "frame" : "{{60, 140}, {200, 200}}",
           "editable" : true,
           "border_width" : 1,
           "alignment" : "left",
           "autocorrection_type" : "no",
+          "alpha" : 0.5,
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "font_name" : "<System>",
           "spellchecking_type" : "no",
           "class" : "TextView",
           "name" : "textview1",
           "flex" : "WH"
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{164, 46}, {150, 96}}",
-        "class" : "TextField",
-        "attributes" : {
-          "uuid" : "64CE5D2E-9C4D-4E71-84AA-993475A72A72",
-          "corner_radius" : 1,
-          "frame" : "{{60, 224}, {200, 32}}",
-          "border_width" : 1,
-          "custom_attributes" : "",
-          "action" : "dte",
-          "alignment" : "left",
-          "autocorrection_type" : "no",
-          "font_name" : "<System>",
-          "spellchecking_type" : "no",
-          "class" : "TextField",
-          "name" : "words1",
-          "font_size" : 17
         },
         "selected" : false
       },
@@ -129,17 +103,20 @@
         "nodes" : [
 
         ],
-        "frame" : "{{164, 6}, {111, 32}}",
+        "frame" : "{{6, 650}, {150, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_name" : "<System>",
+          "border_width" : 0,
+          "name" : "label1",
+          "text_color" : "RGBA(0.011765,0.337255,0.392157,1.000000)",
           "frame" : "{{85, 224}, {150, 32}}",
-          "uuid" : "FE0E497C-12F7-4A42-8B32-B403D6C54242",
-          "class" : "Label",
+          "uuid" : "164260A3-DCF6-4C4F-94E2-E4C330B51922",
+          "corner_radius" : 0,
           "alignment" : "left",
-          "text" : "From dovahzul",
-          "font_size" : 15,
-          "name" : "label_words"
+          "text" : "Created by Reconer_000",
+          "class" : "Label",
+          "font_size" : 10,
+          "font_name" : "<System>"
         },
         "selected" : false
       },
@@ -147,22 +124,25 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 323}, {308, 125}}",
+        "frame" : "{{6, 365}, {369, 245}}",
         "class" : "TextView",
         "attributes" : {
           "uuid" : "CB13AD99-C1FB-4080-85F2-3FDC0FB7B773",
           "flex" : "WH",
           "corner_radius" : 2,
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
           "frame" : "{{60, 140}, {200, 200}}",
           "editable" : true,
           "border_width" : 1,
           "alignment" : "left",
           "autocorrection_type" : "no",
+          "alpha" : 0.5,
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "font_name" : "DragonAlphabetPublic-Regular",
           "spellchecking_type" : "no",
           "class" : "TextView",
           "name" : "textview2",
-          "font_size" : 17
+          "font_size" : 20
         },
         "selected" : false
       },
@@ -170,24 +150,124 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 470}, {150, 32}}",
+        "frame" : "{{234, 150}, {81, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "clear",
+          "frame" : "{{151, 337}, {80, 32}}",
+          "tint_color" : "RGBA(0.250980,0.035294,0.411765,1.000000)",
+          "title" : "Clear",
+          "uuid" : "42435171-88A0-4D5D-9BAB-FC6D7E4C0155",
+          "class" : "Button",
+          "font_bold" : true,
+          "name" : "button2",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{125, 150}, {115, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "hide_keyboard",
+          "frame" : "{{151, 337}, {80, 32}}",
+          "tint_color" : "RGBA(0.250980,0.035294,0.411765,1.000000)",
+          "title" : "Hide keyboard",
+          "uuid" : "73B5729A-34FB-4194-AAD3-69F92CD15818",
+          "class" : "Button",
+          "font_bold" : true,
+          "name" : "button1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{259, 6}, {150, 32}}",
         "class" : "Label",
         "attributes" : {
-          "border_width" : 0,
-          "font_name" : "<System>",
-          "frame" : "{{85, 224}, {150, 32}}",
-          "uuid" : "164260A3-DCF6-4C4F-94E2-E4C330B51922",
+          "name" : "label2",
+          "frame" : "{{116, 337}, {150, 32}}",
+          "uuid" : "0E3C4147-638C-4945-8A86-DCFD48200E2A",
           "class" : "Label",
           "alignment" : "left",
-          "text" : "Created by Reconer_000",
-          "corner_radius" : 0,
-          "name" : "label1",
-          "font_size" : 8
+          "text" : "Translate to:",
+          "font_size" : 15,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{259, 46}, {116, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "dte",
+          "frame" : "{{151, 337}, {80, 32}}",
+          "tint_color" : "RGBA(0.250980,0.035294,0.411765,1.000000)",
+          "title" : "English",
+          "uuid" : "1E9A44F8-D124-4199-AC67-968726D8A57A",
+          "class" : "Button",
+          "font_bold" : true,
+          "name" : "button3",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{259, 86}, {116, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "etd",
+          "frame" : "{{151, 337}, {80, 32}}",
+          "tint_color" : "RGBA(0.250980,0.035294,0.411765,1.000000)",
+          "title" : "Dovahzul",
+          "uuid" : "CD04C04A-939B-48B5-A82D-DDA4A8664D11",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button4",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 46}, {265, 100}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "64CE5D2E-9C4D-4E71-84AA-993475A72A72",
+          "corner_radius" : 1,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{60, 224}, {200, 32}}",
+          "border_width" : 1,
+          "custom_attributes" : "",
+          "action" : "",
+          "alignment" : "left",
+          "autocorrection_type" : "yes",
+          "alpha" : 0.49999999999999994,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_name" : "<System>",
+          "spellchecking_type" : "yes",
+          "class" : "TextField",
+          "name" : "words",
+          "font_size" : 17
         },
         "selected" : true
       }
     ],
-    "frame" : "{{0, 0}, {320, 480}}",
+    "frame" : "{{0, 0}, {381, 706}}",
     "class" : "View",
     "attributes" : {
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
